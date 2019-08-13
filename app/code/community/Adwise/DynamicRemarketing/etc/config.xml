@@ -1,0 +1,66 @@
+<?xml version="1.0"?>
+<config>
+	
+	<modules>
+		<Adwise_DynamicRemarketing>
+			<version>1.0.0</version>
+		</Adwise_DynamicRemarketing>
+	</modules>
+	
+	<global>
+		<helpers>
+			<adwise_dynamicremarketing>
+				<class>Adwise_DynamicRemarketing_Helper</class>
+			</adwise_dynamicremarketing>
+		</helpers>
+		<blocks>
+			<adwise_dynamicremarketing>
+				<class>Adwise_DynamicRemarketing_Block</class>
+			</adwise_dynamicremarketing>
+		</blocks>
+		<models>
+			<adwise_dynamicremarketing>
+				<class>Adwise_DynamicRemarketing_Model</class>
+			</adwise_dynamicremarketing>
+		</models>
+	</global>
+	
+	<frontend>
+		<layout>
+			<updates>
+				<adwise_dynamicremarketing>
+					<file>dynamicremarketing.xml</file>
+				</adwise_dynamicremarketing>
+			</updates>
+		</layout>
+		<translate>
+			<modules>
+				<Adwise_DynamicRemarketing>
+					<files><default>Adwise_DynamicRemarketing.csv</default></files>
+				</Adwise_DynamicRemarketing>
+			</modules>
+		</translate>
+	</frontend>
+	
+	<adminhtml>
+		<translate>
+			<modules>
+				<Adwise_DynamicRemarketing>
+					<files><default>Adwise_DynamicRemarketing.csv</default></files>
+				</Adwise_DynamicRemarketing>
+			</modules>
+		</translate>
+	</adminhtml>
+	
+	<!--Default config params -->
+	<default>
+		<dynamicremarketing>
+			<general>
+				<enable>false</enable>
+				<js_remarketing_only>1</js_remarketing_only>
+				<attribute_key>sku</attribute_key>
+			</general>
+		</dynamicremarketing>
+	</default>
+	
+</config>
