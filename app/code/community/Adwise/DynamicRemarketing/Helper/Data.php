@@ -7,7 +7,7 @@
  * @package 	Adwise_DynamicRemarketing
  * @author		Adwise Internetmarketing <info@adwise.nl>
  * @copyright  	Copyright (c) 2013 Adwise Internetmarketing http://www.adwise.nl/
- * @version 	1.0.0
+ * @version 	1.0.1
  * 
  */
 Class Adwise_DynamicRemarketing_Helper_Data extends Mage_Core_Helper_Abstract{

@@ -150,6 +150,7 @@ Class Adwise_DynamicRemarketing_Block_Script extends Mage_Core_Block_Template{
 		if($_product && $_product instanceof Mage_Catalog_Model_Product){
 			
 			$_params = array();
+			
 			$_params['ecomm_prodid'] = $_product->getData($this->_productAttribute);
 			$_params['ecomm_totalvalue'] = $this->formatPrice($_product->getFinalPrice());
 			

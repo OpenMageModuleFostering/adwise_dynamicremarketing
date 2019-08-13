@@ -7,7 +7,7 @@
  * @package 	Adwise_DynamicRemarketing
  * @author		Adwise Internetmarketing <info@adwise.nl>
  * @copyright  	Copyright (c) 2013 Adwise Internetmarketing http://www.adwise.nl/
- * @version 	1.0.0
+ * @version 	1.0.1
  * 
  */
 Class Adwise_DynamicRemarketing_Model_System_Config_Source_Attributes{
@@ -29,6 +29,7 @@ Class Adwise_DynamicRemarketing_Model_System_Config_Source_Attributes{
 	 */
 	private function initAttributes(){
 		$attributes = array();
+		$attributes[] = array('value'=>'entity_id','label'=>'Entity ID');
 		$collection = Mage::getResourceModel('eav/entity_attribute_collection')->setEntityTypeFilter(Mage::getModel('eav/entity')->setType('catalog_product')->getTypeId());
 		if($collection->getSize()){
 			foreach($collection as $attribute){

@@ -1,22 +1,24 @@
 <?xml version="1.0"?>
 <package>
     <name>Adwise_DynamicRemarketing</name>
-    <version>1.0.0</version>
+    <version>1.0.1</version>
     <stability>stable</stability>
-    <license uri="http://opensource.org/licenses/GPL-3.0">GPL-3.0</license>
+    <license uri="http://opensource.org/licenses/GPL-3.0">GNU General Public License (GPL)</license>
     <channel>community</channel>
     <extends/>
     <summary>Easily embed the Google Dynamic Remarketing tags by simply enabeling the module in system configuration.</summary>
-    <description>The Adwise DynamicRemarketing module allows shop owners to easily embed the Google Dynamic Remarketing javascript code on their webshop pages by simply enabeling the module in Magento`s system configuration options.&#xD;
+    <description>Adwise DynamicRemarketing&#xD;
+&#xD;
+The Adwise DynamicRemarketing module allows shop owners to easily embed the Google Dynamic Remarketing javascript code on their webshop pages by simply enabeling the module in Magento`s system configuration options.&#xD;
 &#xD;
 For more information about Google Dynamic Remarketing, please refer to: http://www.google.com/think/products/dynamic-remarketing-for-retail.html&#xD;
 &#xD;
 Read more information about the Dynamic Remarketing module (in Dutch).</description>
-    <notes>First stable release</notes>
-    <authors><author><name>Adwise Internetmarketing</name><user>adwise_im</user><email>d.lefers@adwise.nl</email></author></authors>
-    <date>2013-10-17</date>
-    <time>18:55:28</time>
-    <contents><target name="magecommunity"><dir name="Adwise"><dir name="DynamicRemarketing"><dir name="Block"><file name="Script.php" hash="2d883987cf0c1dc38ede8b0661f31795"/></dir><dir name="Helper"><file name="Data.php" hash="6ee98aa20a9cecf9d8f9247938750558"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><file name="Attributes.php" hash="2bf2a4b41177709561e1ba114cc65b01"/></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="155d37e06a50763f065c8fc867e4c213"/><file name="config.xml" hash="88d8b6e5f97624cbd5e43508698bfa8f"/><file name="system.xml" hash="eb8729bafb235c4c452bc6c0ed774525"/></dir></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="layout"><file name="dynamicremarketing.xml" hash="23c787db8182db01f3a35f8ecc8854d8"/></dir><dir name="template"><dir name="adwise"><dir name="dynamicremarketing"><file name="script.phtml" hash="b1c4a3d742bb8e503e7c9733739751f5"/></dir></dir></dir></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Adwise_DynamicRemarketing.xml" hash="b3492ee65ccf37faefcabb0f2db12018"/></dir></target><target name="magelocale"><dir name="nl_NL"><file name="Adwise_DynamicRemarketing.csv" hash="9cbf9dbdd120fcc114bd08408915b4f9"/></dir></target></contents>
+    <notes>Added "entity_id" as prodid param for Remarketing Tag matching the merchant shopping feed.</notes>
+    <authors><author><name>Adwise Internetmarketing</name><user>adwise_im</user><email>daniel@adwise.nl</email></author></authors>
+    <date>2013-11-07</date>
+    <time>08:43:12</time>
+    <contents><target name="magecommunity"><dir name="Adwise"><dir name="DynamicRemarketing"><dir name="Block"><file name="Script.php" hash="4b5a4d454c875bbb8f61bc2c536e7780"/></dir><dir name="Helper"><file name="Data.php" hash="edd987cb2f182acaea6fd19fd90d6a93"/></dir><dir name="Model"><dir name="System"><dir name="Config"><dir name="Source"><file name="Attributes.php" hash="0ef20e78b4d91107c85595229e09355f"/></dir></dir></dir></dir><dir name="etc"><file name="adminhtml.xml" hash="155d37e06a50763f065c8fc867e4c213"/><file name="config.xml" hash="661e896bd835018877d80f3fe7f93a69"/><file name="system.xml" hash="25955859d6fe07db1c80aa611e9b8e71"/></dir></dir></dir></target><target name="mageetc"><dir name="modules"><file name="Adwise_DynamicRemarketing.xml" hash="b3492ee65ccf37faefcabb0f2db12018"/></dir></target><target name="magelocale"><dir><dir name="nl_NL"><file name="Adwise_DynamicRemarketing.csv" hash="9cbf9dbdd120fcc114bd08408915b4f9"/></dir></dir></target><target name="magedesign"><dir name="frontend"><dir name="default"><dir name="default"><dir name="template"><dir name="adwise"><dir name="dynamicremarketing"><file name="script.phtml" hash="b1c4a3d742bb8e503e7c9733739751f5"/></dir></dir></dir><dir name="layout"><file name="dynamicremarketing.xml" hash="23c787db8182db01f3a35f8ecc8854d8"/></dir></dir></dir></dir></target></contents>
     <compatible/>
-    <dependencies><required><php><min>5.3.0</min><max>5.5.5</max></php></required></dependencies>
+    <dependencies><required><php><min>5.2.13</min><max>5.3.24</max></php></required></dependencies>
 </package>
