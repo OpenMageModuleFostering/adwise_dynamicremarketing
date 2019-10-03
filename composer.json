@@ -1,16 +1,19 @@
 {
-    "name": "OpenMageModuleFostering/Adwise_DynamicRemarketing",
+    "name": "OpenMageModuleFostering\/Adwise_DynamicRemarketing",
     "type": "magento-module",
     "license": "GNU-General-Public-License-(GPL)",
     "homepage": "",
     "description": "Easily embed the Google Dynamic Remarketing tags by simply enabeling the module in system configuration.",
     "authors": [
-    {
-        "name": "Adwise Internetmarketing",
-        "email": "daniel@adwise.nl"
-    }
-],
+        {
+            "name": "Adwise Internetmarketing",
+            "email": "daniel@adwise.nl"
+        }
+    ],
     "suggest": {
-        "magento-hackathon/magento-composer-installer": "*"
-    }
+        "magento-hackathon\/magento-composer-installer": "*"
+    },
+    "keywords": [
+        "openmage-module"
+    ]
 }
